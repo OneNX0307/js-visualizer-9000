@@ -6,11 +6,11 @@ services:
     container_name: js-visualizer-9000-server
     image: alfredxinglkey/js-visualizer-9000-server
     ports:
-      - 8080:8080
+      - "8083:8083"
   client:
     build:
       context: ./js-visualizer-9000-client/
     container_name: js-visualizer-9000-client
     image: alfredxinglkey/js-visualizer-9000-client
     ports:
-      - 3000:3000
+      - "3000:3000"
